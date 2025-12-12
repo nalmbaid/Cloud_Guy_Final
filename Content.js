@@ -347,7 +347,8 @@ document.addEventListener("click", (e) => {
   const delWords = ["remove", "minus","decrease","less","delete"];
 
   const isAdd = addWords.some(w => text.includes(w) || aria.includes(w) || cls.includes(w));
-  const isDel = delWords.some(w => text.includes(w) || aria.includes(w) || cls.includes(w));
+  const isDel = delWords.some(w => text.includes(w) || aria.includes(w) || cls.includes(w)) || dataAt.includes("remove");
+
 
   if (isAdd) {
     currentImageIndex = Math.min(currentImageIndex + 1, baseImages.length - 1);
