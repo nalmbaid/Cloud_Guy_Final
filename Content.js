@@ -341,7 +341,9 @@ document.addEventListener("click", (e) => {
   const aria = (button.getAttribute("aria-label") || "").toLowerCase();
   const cls  = (button.className || "").toLowerCase();
 
-  const addWords = ["add to cart", "add to bag", "buy now", "purchase", "shop now", "order now", "add", "+"];
+
+
+  const addWords = ["add to cart", "add to bag", "buy now", "purchase", "shop now", "order now", "add", "+","get it"];
   const delWords = ["remove", "minus","decrease","less","delete"];
 
   const isAdd = addWords.some(w => text.includes(w) || aria.includes(w) || cls.includes(w));
